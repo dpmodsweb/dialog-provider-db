@@ -1,0 +1,18 @@
+{
+  "id": "dialog_1780852849416",
+  "title": "Glassmorphism v1",
+  "category": "Login Dialog",
+  "description": "date system\nupdate,ban,maintainace,silent check",
+  "firebase_json": "AUTO",
+  "firebase_rules": "{\n  \"rules\": {\n    \"dp_dialog_controller\": {\n      // Allows the app to read UI settings, Info, and Keys\n      \".read\": true,\n      \n      // Locks down the main database (prevents modifying UI or info)\n      \".write\": false,\n      \n      \"security\": {\n        \"authorized_hwids\": {\n          // SPECIAL RULE 1: Allows the HTML panel to generate and revoke keys\n          \".write\": true,\n          \n          \"$key\": {\n            \"linked_devices\": {\n              \"$hwid\": {\n                // Allows the Android app to link its hardware ID\n                \".write\": true\n              }\n            }\n          }\n        }\n      }\n    },\n    \n    \"Resellers\": {\n      // SPECIAL RULE 2: Allows the HTML panel to verify passwords and deduct balances\n      \".read\": true,\n      \".write\": true\n    }\n  }\n}",
+  "thumbnail": "https://raw.githubusercontent.com/dpmodsweb/dialog-provider-db/main/dialogs/dialog_1780852849416/thumbnail.png",
+  "screenshots": [
+    "https://raw.githubusercontent.com/dpmodsweb/dialog-provider-db/main/dialogs/dialog_1780852849416/shot_0.png",
+    "https://raw.githubusercontent.com/dpmodsweb/dialog-provider-db/main/dialogs/dialog_1780852849416/shot_1.png",
+    "https://raw.githubusercontent.com/dpmodsweb/dialog-provider-db/main/dialogs/dialog_1780852849416/shot_2.png",
+    "https://raw.githubusercontent.com/dpmodsweb/dialog-provider-db/main/dialogs/dialog_1780852849416/shot_3.png",
+    "https://raw.githubusercontent.com/dpmodsweb/dialog-provider-db/main/dialogs/dialog_1780852849416/shot_4.png"
+  ],
+  "download": "https://raw.githubusercontent.com/dpmodsweb/dialog-provider-db/main/dialogs/dialog_1780852849416/project.zip",
+  "date": "2026-06-07T17:21:03.736Z"
+}
