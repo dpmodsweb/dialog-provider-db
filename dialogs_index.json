@@ -1,0 +1,11 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog_1780850301754",
+      "title": "CRIMSON DIALOG v1",
+      "description": "day login (no date)\nstart day when user start first time",
+      "thumbnail": "https://raw.githubusercontent.com/dpmodsweb/dialog-provider-db/main/dialogs/dialog_1780850301754/thumbnail.png",
+      "date": "2026-06-07T16:38:27.135Z"
+    }
+  ]
+}
