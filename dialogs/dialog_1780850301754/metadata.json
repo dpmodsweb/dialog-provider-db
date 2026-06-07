@@ -2,7 +2,7 @@
   "id": "dialog_1780850301754",
   "title": "CRIMSON DIALOG v1",
   "category": "Login Dialog",
-  "description": "day login (no date)\nstart day when user start first time",
+  "description": "day login (no date)\nstart day when user start first time\n\nSRC AIDE",
   "firebase_json": "{\n  \"DPMods_Security\": {\n    \"App_Status\": {\n      \"Admin_URL\": \"https://t.me/dp_mods\",\n      \"Banned_Devices\": \"\",\n      \"Dialog_Banner\": \"https://github.com/retroalpha0/about-alpha/blob/main/fantasy-scene-anime-style.jpg?raw=true\",\n      \"Dialog_Subtitle\": \"Enter your premium license key to continue\",\n      \"Dialog_Title\": \"SYSTEM ACCESS\",\n      \"Maintenance\": false,\n      \"Update_Link\": \"https://t.me/dp_mods\",\n      \"Update_Required\": false\n    },\n    \"Keys\": {\n      \"DP-KEY-4X1AXX\": {\n        \"Banned\": false,\n        \"Days\": 8,\n        \"DeviceLimit\": 1,\n        \"Devices\": {\n          \"c346a7afa958f2bd\": 1780319737\n        }\n      }\n    }\n  }\n}",
   "firebase_rules": "{\n  \"rules\": {\n    \"DPMods_Security\": {\n      \"App_Status\": {\n        \".read\": true,\n        \".write\": false\n      },\n      \"Keys\": {\n        \".read\": false, \n        \"$key\": {\n          \".read\": true,\n          \".write\": false,\n          \"Devices\": {\n             \".write\": true\n          }\n        }\n      }\n    }\n  }\n}",
   "thumbnail": "https://raw.githubusercontent.com/dpmodsweb/dialog-provider-db/main/dialogs/dialog_1780850301754/thumbnail.png",
